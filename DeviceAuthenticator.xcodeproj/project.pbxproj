@@ -10,6 +10,8 @@
 		AFE7C371215AF4E0000C576F /* DeviceAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE7C36F215AF4E0000C576F /* DeviceAuthenticator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFE7C377215AF51A000C576F /* BiometricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7C376215AF51A000C576F /* BiometricType.swift */; };
 		AFE7C37A215AF53D000C576F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE7C379215AF53D000C576F /* LocalAuthentication.framework */; };
+		AFE7C37C215AF81C000C576F /* BiometricAuthenticatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7C37B215AF81C000C576F /* BiometricAuthenticatorType.swift */; };
+		AFE7C37E215AF84E000C576F /* BiometricAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7C37D215AF84E000C576F /* BiometricAuthenticator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		AFE7C370215AF4E0000C576F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE7C376215AF51A000C576F /* BiometricType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricType.swift; sourceTree = "<group>"; };
 		AFE7C379215AF53D000C576F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
+		AFE7C37B215AF81C000C576F /* BiometricAuthenticatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticatorType.swift; sourceTree = "<group>"; };
+		AFE7C37D215AF84E000C576F /* BiometricAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				AFE7C376215AF51A000C576F /* BiometricType.swift */,
+				AFE7C37B215AF81C000C576F /* BiometricAuthenticatorType.swift */,
+				AFE7C37D215AF84E000C576F /* BiometricAuthenticator.swift */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -153,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE7C37C215AF81C000C576F /* BiometricAuthenticatorType.swift in Sources */,
 				AFE7C377215AF51A000C576F /* BiometricType.swift in Sources */,
+				AFE7C37E215AF84E000C576F /* BiometricAuthenticator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
