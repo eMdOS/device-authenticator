@@ -21,6 +21,8 @@ public class BiometricAuthenticator {
     }
 }
 
+// MARK: - BiometricAuthenticatorType
+
 extension BiometricAuthenticator: BiometricAuthenticatorType {
     public var isAvailable: Bool {
         return biometricType != .none
@@ -38,13 +40,19 @@ extension BiometricAuthenticator: BiometricAuthenticatorType {
         if canEvaluatePolicy {
             authenticationContext.evaluatePolicy(policy, localizedReason: "Localized Reason") { (isSuccess, error) in
                 if let error = error {
-                    onError?(error)
+                    DispatchQueue.main.async(execute: {
+                        onError?(error)
+                    })
                 } else if isSuccess {
-                    onSuccess?()
+                    DispatchQueue.main.async(execute: {
+                        onSuccess?()
+                    })
                 }
             }
         } else if let error = authenticationError {
-            onError?(error)
+            DispatchQueue.main.async(execute: {
+                onError?(error)
+            })
         }
     }
 }
