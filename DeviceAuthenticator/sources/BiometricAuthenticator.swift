@@ -36,12 +36,12 @@ extension BiometricAuthenticator: BiometricAuthenticatorType {
         }
     }
 
-    public func authenticate(onSuccess: (() -> Void)?, onError: ((Error) -> Void)?) {
+    public func authenticate(onSuccess: (() -> Void)?, onError: ((AuthenticationError) -> Void)?) {
         if canEvaluatePolicy {
             authenticationContext.evaluatePolicy(policy, localizedReason: "Localized Reason") { (isSuccess, error) in
                 if let error = error {
                     DispatchQueue.main.async(execute: {
-                        onError?(error)
+                        onError?(AuthenticationError(error: LAError(_nsError: error as NSError)))
                     })
                 } else if isSuccess {
                     DispatchQueue.main.async(execute: {
@@ -51,7 +51,7 @@ extension BiometricAuthenticator: BiometricAuthenticatorType {
             }
         } else if let error = authenticationError {
             DispatchQueue.main.async(execute: {
-                onError?(error)
+                onError?(AuthenticationError(error: LAError(_nsError: error)))
             })
         }
     }

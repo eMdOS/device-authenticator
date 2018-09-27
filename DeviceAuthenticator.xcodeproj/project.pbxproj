@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF2C473A215C71BC003594D0 /* AuthenticationErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C4739215C71BC003594D0 /* AuthenticationErrorType.swift */; };
+		AF2C473C215C722A003594D0 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C473B215C722A003594D0 /* AuthenticationError.swift */; };
 		AFE7C371215AF4E0000C576F /* DeviceAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE7C36F215AF4E0000C576F /* DeviceAuthenticator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFE7C377215AF51A000C576F /* BiometricType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7C376215AF51A000C576F /* BiometricType.swift */; };
 		AFE7C37A215AF53D000C576F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE7C379215AF53D000C576F /* LocalAuthentication.framework */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF2C4739215C71BC003594D0 /* AuthenticationErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationErrorType.swift; sourceTree = "<group>"; };
+		AF2C473B215C722A003594D0 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
 		AFE7C36C215AF4E0000C576F /* DeviceAuthenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE7C36F215AF4E0000C576F /* DeviceAuthenticator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceAuthenticator.h; sourceTree = "<group>"; };
 		AFE7C370215AF4E0000C576F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		AFE7C375215AF4FB000C576F /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				AF2C473B215C722A003594D0 /* AuthenticationError.swift */,
+				AF2C4739215C71BC003594D0 /* AuthenticationErrorType.swift */,
 				AFE7C39D215B051A000C576F /* BiometricAuthenticationContext.swift */,
 				AFE7C37D215AF84E000C576F /* BiometricAuthenticator.swift */,
 				AFE7C37B215AF81C000C576F /* BiometricAuthenticatorType.swift */,
@@ -162,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2C473A215C71BC003594D0 /* AuthenticationErrorType.swift in Sources */,
 				AFE7C37C215AF81C000C576F /* BiometricAuthenticatorType.swift in Sources */,
 				AFE7C377215AF51A000C576F /* BiometricType.swift in Sources */,
 				AFE7C39E215B051A000C576F /* BiometricAuthenticationContext.swift in Sources */,
+				AF2C473C215C722A003594D0 /* AuthenticationError.swift in Sources */,
 				AFE7C37E215AF84E000C576F /* BiometricAuthenticator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
