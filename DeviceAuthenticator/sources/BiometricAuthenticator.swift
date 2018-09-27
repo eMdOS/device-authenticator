@@ -3,9 +3,12 @@ import Foundation
 import LocalAuthentication
 
 public class BiometricAuthenticator {
-
     let policy: LAPolicy
-    let authenticationContext: LAContext = LAContext()
+    internal(set) var authenticationContext: BiometricAuthenticationContext = LAContext() {
+        didSet {
+            _ = canEvaluatePolicy
+        }
+    }
     private(set) var authenticationError: NSError?
 
     public init(shouldSupportPasscode: Bool = false) {

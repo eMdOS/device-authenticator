@@ -12,6 +12,7 @@
 		AFE7C37A215AF53D000C576F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE7C379215AF53D000C576F /* LocalAuthentication.framework */; };
 		AFE7C37C215AF81C000C576F /* BiometricAuthenticatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7C37B215AF81C000C576F /* BiometricAuthenticatorType.swift */; };
 		AFE7C37E215AF84E000C576F /* BiometricAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7C37D215AF84E000C576F /* BiometricAuthenticator.swift */; };
+		AFE7C39E215B051A000C576F /* BiometricAuthenticationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE7C39D215B051A000C576F /* BiometricAuthenticationContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AFE7C379215AF53D000C576F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
 		AFE7C37B215AF81C000C576F /* BiometricAuthenticatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticatorType.swift; sourceTree = "<group>"; };
 		AFE7C37D215AF84E000C576F /* BiometricAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticator.swift; sourceTree = "<group>"; };
+		AFE7C39D215B051A000C576F /* BiometricAuthenticationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +68,10 @@
 		AFE7C375215AF4FB000C576F /* sources */ = {
 			isa = PBXGroup;
 			children = (
-				AFE7C376215AF51A000C576F /* BiometricType.swift */,
-				AFE7C37B215AF81C000C576F /* BiometricAuthenticatorType.swift */,
+				AFE7C39D215B051A000C576F /* BiometricAuthenticationContext.swift */,
 				AFE7C37D215AF84E000C576F /* BiometricAuthenticator.swift */,
+				AFE7C37B215AF81C000C576F /* BiometricAuthenticatorType.swift */,
+				AFE7C376215AF51A000C576F /* BiometricType.swift */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				AFE7C37C215AF81C000C576F /* BiometricAuthenticatorType.swift in Sources */,
 				AFE7C377215AF51A000C576F /* BiometricType.swift in Sources */,
+				AFE7C39E215B051A000C576F /* BiometricAuthenticationContext.swift in Sources */,
 				AFE7C37E215AF84E000C576F /* BiometricAuthenticator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
