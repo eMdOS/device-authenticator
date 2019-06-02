@@ -1,8 +1,7 @@
-
 import Foundation
 import LocalAuthentication
 
-public struct AuthenticationError {
+public struct AuthenticationError: Error {
     public let code: Int
     public let type: AuthenticationErrorType
 
